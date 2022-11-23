@@ -3,7 +3,7 @@ package _283_Move_Zeroes
 func moveZeroes(nums []int) {
 	n := 0
 	for k := range nums {
-		if nums[k] != 0 {
+		if nums[k] != 0 && n != k {
 			nums[n] = nums[k]
 			n++
 		}
