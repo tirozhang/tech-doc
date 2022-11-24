@@ -64,13 +64,15 @@ func maxSlidingWindow3(nums []int, k int) []int {
 		for len(queue) > 0 && nums[l] > nums[queue[len(queue)-1]] {
 			queue = queue[0 : len(queue)-1]
 		}
-		queue = append(queue, l)
 
+		queue = append(queue, l)
 		if l >= k-1 {
 			res[l-k+1] = nums[queue[0]]
 		}
 		l++
 	}
 	return res
-
 }
+
+// left right >queue
+// top O(1) insert

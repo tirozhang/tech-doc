@@ -1,5 +1,6 @@
 package _862_Shortest_Subarray_with_Sum_at_Least_K
 
+// 子数组的和>=k 最小子数组
 func shortestSubarray(A []int, K int) int {
 	res, prefixSum := len(A)+1, getPrefixSum(A)
 	// deque 中保存递增的 prefixSum 下标
