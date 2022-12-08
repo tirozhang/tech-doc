@@ -1,4 +1,4 @@
-package sort
+package sort_tpl
 
 func mergeSort(nums []int, start, end int) {
 	if start >= end {

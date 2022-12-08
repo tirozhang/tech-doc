@@ -1,4 +1,6 @@
-package sort
+package sort_tpl
+
+import "leetcode/help_func"
 
 func insertSort(nums []int) {
 	start, length := 1, len(nums)
@@ -8,8 +10,8 @@ func insertSort(nums []int) {
 			if nums[start] >= nums[index] {
 				index++
 			} else {
-				reverse(nums[index:start])
-				reverse(nums[index : start+1])
+				help_func.Reverse(nums[index:start])
+				help_func.Reverse(nums[index : start+1])
 			}
 		}
 		start++

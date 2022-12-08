@@ -1,4 +1,4 @@
-package sort
+package sort_tpl
 
 // 快速排序
 // 先先整体有序，再局部有序的分治算法

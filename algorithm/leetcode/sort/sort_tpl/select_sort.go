@@ -1,4 +1,4 @@
-package sort
+package sort_tpl
 
 func selectSort(nums []int) {
 	index, length := 0, len(nums)
